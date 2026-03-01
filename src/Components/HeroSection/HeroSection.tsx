@@ -1,12 +1,14 @@
 import Container from "../Layout/Container";
-
+import Hero from "../../assets/courier.png";
+import Parcel from "../../assets/parcel.png";
 const HeroSection = () => {
   return (
     <section className="bg-gray-100 py-24  max-w-2xl mx-auto rounded-2xl ">
       <Container>
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left Content */}
-          <div>
+          <div className="flex flex-col items-center">
+            <img src={Parcel} alt="Parcel" className="max-w-full h-auto" />
             <h1 className="text-4xl lg:text-5xl font-bold text-dark leading-tight">
               We Make Sure Your Parcel Arrives On Time – No Fuss.
             </h1>
@@ -28,10 +30,10 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Illustration */}
+          {/* Delivery */}
           <div className="flex justify-center">
             <img
-              src="/hero-illustration.png"
+              src={Hero}
               alt="Delivery Rider"
               className="max-w-full h-auto"
             />
