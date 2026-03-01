@@ -1,38 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-/* 
-  font - Urbanist
-
-primary-Txt-color - 03373D
-gray-text-color- 606060
-
-gray-whit-txt-color - DADADA
-dark-txt-color - 1F1F1F
-
-ylw color - CAEB66
-circle-arrw-bg-color - 1F1F1F
-
-
-
-faq-ans-color - E6F2F3
-footer color - 0B0B0B
-*/
-
-@theme {
+/* @theme {
   --font-urbanist: "Urbanist", sans-serif;
 
-  --color-primary: #eaeced;
-  --color-secondary: #135426;
-  --color-offWhite: #c4c4c4;
-  /* --color-TextPrimary: #dceee2; */
-  --color-darkSecondary: #04170a;
+  --color-bg-color: #eaeced;
+  --color-primary-txt-color: #03373d;
+  --color-gray-text-color: #606060;
+  --color-gray-whit-txt-color: #dadada;
+
+  --color-dark-txt-color: #1f1f1f;
+  --color-shape-grn-color: #caeb66;
+
+  --color-circle-arw-bg-color: #caeb66;
+  --color-faq-ans-bg-color: #e6f2f3;
+  --color-footer-bg-color: #0b0b0b;
+  
+} */
+
+@theme {
+  /* Fonts */
+  --font-urbanist: "Urbanist", sans-serif;
+
+  /* Layout */
+  --container-2xl: 1500px;
+
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Brand Colors */
+  --color-primary: #caeb66;
+  --color-bg: #eaeced;
+  --color-footer-bg: #0b0b0b;
+
+  /* Text Colors */
+  --color-text-primary: #03373d;
+  --color-text-dark: #1f1f1f;
+  --color-text-gray: #606060;
+  --color-text-light-gray: #dadada;
+
+  /* UI Colors */
+  --color-circle-arrow-bg: #caeb66;
+  --color-faq-answer-bg: #e6f2f3;
 }
+
 :root {
   font-family: var(--font-urbanist);
 
-  color: var(--color-darkSecondary);
-  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
