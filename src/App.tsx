@@ -1,7 +1,8 @@
 import "./App.css";
+import Home from "./Components/Home/Home";
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">Zap-Shift!</h1>;
+  return <Home />;
 }
 
 export default App;
