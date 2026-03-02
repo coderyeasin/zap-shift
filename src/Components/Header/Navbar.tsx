@@ -35,10 +35,12 @@ const Navbar = () => {
             Sign In
           </button>
 
-          <button className="bg-primary text-dark font-bold text-[20px] px-8 py-3 border-2 border-light-gray rounded-xl hover:opacity-90 transition cursor-pointer">
-            Sign Up
-          </button>
-          <CircleButton />
+          <div className="flex items-center">
+            <button className="bg-primary text-dark font-bold text-[20px] px-8 py-3 border-2 border-light-gray rounded-xl hover:opacity-90 transition cursor-pointer">
+              Sign Up
+            </button>
+            <CircleButton />
+          </div>
         </div>
       </div>
     </Container>
