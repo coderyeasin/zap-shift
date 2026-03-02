@@ -8,7 +8,7 @@ const HeroSection = () => {
       <Container className="bg-white py-24 rounded-2xl w-full h-166.25">
         <div className="flex justify-around items-center gap-10 flex-col lg:flex-row">
           {/* Left Content */}
-          <div className="max-w-6/12 mx-auto text-center lg:text-left">
+          <div className="max-w-6/12 mx-auto text-center lg:text-left space-y-3">
             <div>
               <img src={Parcel} alt="Parcel" width={220} height={100} />
             </div>
@@ -24,7 +24,7 @@ const HeroSection = () => {
               we deliver on time, every time.
             </p>
 
-            <div className="flex gap-4 mt-8">
+            <div className="flex gap-4 my-7">
               <div className="flex items-center">
                 <button className="bg-primary px-6 py-3 rounded-full font-bold text-[20px] hover:opacity-90 transition">
                   Track Your Parcel
@@ -35,6 +35,12 @@ const HeroSection = () => {
               <button className="px-8 py-3 border-2 border-light-gray rounded-xl hover:opacity-90 cursor-pointer font-bold text-[20px] hover:bg-gray-50 transition">
                 Be A Rider
               </button>
+            </div>
+            <div className="flex items-center gap-3">
+              <p className="border-b-4 border-[#056873] w-12"></p>
+              <p className="border-b-4 border-[#C3DFE2] w-8"></p>
+              <p className="border-b-4 border-[#C3DFE2] w-8"></p>
+              <p className="border-b-4 border-[#C3DFE2] w-8"></p>
             </div>
           </div>
 
