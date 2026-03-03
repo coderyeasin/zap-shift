@@ -1,3 +1,4 @@
+import OurFeatures from "../Features/Features";
 import Header from "../Header/Header";
 import HeroSection from "../HeroSection/HeroSection";
 import HowWorks from "../HowWorks/HowWorks";
@@ -10,6 +11,7 @@ const Home = () => {
       <HeroSection />
       <HowWorks />
       <Services />
+      <OurFeatures />
     </section>
   );
 };
