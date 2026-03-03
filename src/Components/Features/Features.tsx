@@ -4,6 +4,7 @@ import Moon from "../../assets/moonstar.png";
 import Star from "../../assets/start-.png";
 import StarPeople from "../../assets/start-people.png";
 import Rands from "../../assets/randstad.png";
+import { featuresCard } from "../../Custom/featuresCard";
 
 const OurFeatures = () => {
   return (
@@ -24,30 +25,25 @@ const OurFeatures = () => {
           </div>
         </div>
         {/* features */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-20">
-          <div className="bg-gray-100 p-6 rounded-lg text-center">
-            <h3 className="text-xl font-semibold mb-4">
-              We've helped thousands of sales teams
-            </h3>
-            <p>
-              Experience lightning-fast delivery with our efficient logistics
-              network.
-            </p>
-          </div>
-          <div className="bg-gray-100 p-6 rounded-lg text-center">
-            <h3 className="text-xl font-semibold mb-4">Real-Time Tracking</h3>
-            <p>
-              Track your shipments in real-time with our advanced tracking
-              system.
-            </p>
-          </div>
-          <div className="bg-gray-100 p-6 rounded-lg text-center">
-            <h3 className="text-xl font-semibold mb-4">24/7 Support</h3>
-            <p>
-              Our dedicated support team is available around the clock to assist
-              you.
-            </p>
-          </div>
+        <div className="grid grid-cols-1 gap-8 py-20">
+          {featuresCard.map((card) => (
+            <div
+              key={card.id}
+              className="bg-white flex items-center p-6 rounded-lg"
+            >
+              <div>
+                <img src={card.icon} alt={card.title} className="w-50 h-50" />
+              </div>
+              <div className="space-y-5 border-l-2 border-dashed border-text-primary px-8">
+                <h3 className="text-2xl font-extrabold text-text-primary">
+                  {card.title}
+                </h3>
+                <p className="text-gray font-medium leading-6.5">
+                  {card.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
