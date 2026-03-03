@@ -32,11 +32,13 @@ const Navbar = () => {
           <CustomButton
             text="Sign In"
             className="text-gray border-2 border-light-gray rounded-xl"
+            type="button"
           />
           <div className="flex items-center">
             <CustomButton
               text="Sign Up"
               className="bg-primary text-dark rounded-xl"
+              type="button"
             />
             <CircleButton />
           </div>

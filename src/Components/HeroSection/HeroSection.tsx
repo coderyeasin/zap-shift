@@ -2,11 +2,12 @@ import Container from "../Layout/Container";
 import Hero from "../../assets/courier.png";
 import Parcel from "../../assets/parcel.png";
 import CircleButton from "../../Shared/CircleButton";
+import CustomButton from "../../Shared/CustomButton";
 const HeroSection = () => {
   return (
     <section className="">
       <Container className="bg-white py-24 rounded-2xl w-full h-166.25">
-        <div className="flex justify-around items-center gap-10 flex-col lg:flex-row">
+        <div className="flex justify-around items-center gap-10 lg:gap-0 flex-col lg:flex-row">
           {/* Left Content */}
           <div className="max-w-6/12 mx-auto text-center lg:text-left space-y-3">
             <div>
@@ -26,15 +27,19 @@ const HeroSection = () => {
 
             <div className="flex gap-4 my-7">
               <div className="flex items-center">
-                <button className="bg-primary px-6 py-3 rounded-full font-bold text-[20px] hover:opacity-90 transition">
-                  Track Your Parcel
-                </button>
+                <CustomButton
+                  text="Track Your Parcel"
+                  className="bg-primary rounded-full"
+                  type="button"
+                />
+
                 <CircleButton />
               </div>
-
-              <button className="px-8 py-3 border-2 border-light-gray rounded-xl hover:opacity-90 cursor-pointer font-bold text-[20px] hover:bg-gray-50 transition">
-                Be A Rider
-              </button>
+              <CustomButton
+                text="Be A Rider"
+                className="border-2 border-light-gray rounded-xl "
+                type="button"
+              />
             </div>
             <div className="flex items-center gap-3">
               <p className="border-b-4 border-[#056873] w-12"></p>
