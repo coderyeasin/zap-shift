@@ -3,7 +3,7 @@ import { serviceCards } from "../../Custom/serviceCards";
 const Services = () => {
   return (
     <section className="container mx-auto w-full  py-20">
-      <div className="h-[1064px]  bg-text-primary rounded-[32px] py-[100px] px-[100px]">
+      <div className="h-[1064px]  bg-text-primary rounded-[32px] py-[80px] px-[100px]">
         <div className="text-center text-white py-5">
           <h3 className="text-[40px] font-extrabold text-white">
             Our Services
