@@ -1,4 +1,6 @@
-export const worksCards: worksTypes[] = [
+import type { commonCardTypes } from "../Components/types/types";
+
+export const worksCards: commonCardTypes[] = [
   {
     id: 1,
     icon: "/delivery-car.png",

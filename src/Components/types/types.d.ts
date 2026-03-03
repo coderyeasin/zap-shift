@@ -1,4 +1,4 @@
-type worksTypes = {
+export type commonCardTypes = {
   id: number;
   icon: string;
   title: string;
