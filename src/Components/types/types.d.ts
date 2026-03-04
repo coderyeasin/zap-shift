@@ -12,3 +12,17 @@ export type CustomButtonProps = {
   disabled?: boolean;
   type?: "button" | "submit" | "reset";
 };
+
+export type ReviewCardTypes = {
+  id: number;
+  description: string;
+  profile: string;
+  name: string;
+  designation: string;
+};
+
+export type FaqQuestionTypes = {
+  id: number;
+  question: string;
+  answer?: string;
+};
