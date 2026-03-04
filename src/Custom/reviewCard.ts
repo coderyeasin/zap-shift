@@ -3,7 +3,7 @@ import type { ReviewCardTypes } from "../Components/types/types";
 const reviewCard: ReviewCardTypes[] = [
   {
     id: 1,
-    name: "John Doe",
+    name: "Awlad Hossin",
     designation: "Marketing Director",
     profile: "https://example.com/profile1.jpg",
     description:

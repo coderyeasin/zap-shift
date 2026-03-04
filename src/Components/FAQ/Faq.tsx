@@ -2,6 +2,7 @@ import CircleButton from "../../Shared/CircleButton";
 import CustomButton from "../../Shared/CustomButton";
 import faqQuestions from "../../utils/faq";
 import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
+import type { FaqQuestionTypes } from "../types/types";
 
 const Faq = () => {
   return (
@@ -18,7 +19,7 @@ const Faq = () => {
       </div>
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col gap-5">
-          {faqQuestions.map((faq) => (
+          {faqQuestions.map((faq: FaqQuestionTypes) => (
             <div
               key={faq.id}
               className={` px-8 ${faq.id === 1 ? "bg-faq-answer border border-[#2B8282] py-5 rounded-2xl" : "bg-white rounded-xl py-5"} `}
