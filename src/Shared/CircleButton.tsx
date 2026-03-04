@@ -1,10 +1,19 @@
-import { FiArrowUpRight } from "react-icons/fi";
+import type { ReactNode } from "react";
 
-const CircleButton = () => {
+interface CircleButtonProps {
+  onClick?: () => void;
+  children: ReactNode;
+  className?: string;
+}
+// <FiArrowUpRight className="text-primary text-3xl" />
+const CircleButton = ({ onClick, children, className }: CircleButtonProps) => {
   return (
-    <div className="bg-dark w-12 h-12 rounded-full hover:opacity-90 transition flex justify-center items-center cursor-pointer">
-      <FiArrowUpRight className="text-primary text-3xl" />
-    </div>
+    <button
+      className={`bg-dark w-12 h-12 rounded-full hover:opacity-90 transition flex justify-center items-center cursor-pointer ${className || ""}`}
+      onClick={onClick}
+    >
+      {children}
+    </button>
   );
 };
 

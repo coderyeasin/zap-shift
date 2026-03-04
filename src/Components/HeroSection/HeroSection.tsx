@@ -3,6 +3,7 @@ import Hero from "../../assets/courier.png";
 import Parcel from "../../assets/parcel.png";
 import CircleButton from "../../Shared/CircleButton";
 import CustomButton from "../../Shared/CustomButton";
+import { FiArrowUpRight } from "react-icons/fi";
 const HeroSection = () => {
   return (
     <section className="">
@@ -33,7 +34,9 @@ const HeroSection = () => {
                   type="button"
                 />
 
-                <CircleButton />
+                <CircleButton>
+                  <FiArrowUpRight className="text-primary text-3xl" />
+                </CircleButton>
               </div>
               <CustomButton
                 text="Be A Rider"

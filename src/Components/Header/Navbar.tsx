@@ -3,6 +3,7 @@ import Logo from "../../assets/logo.png";
 import CircleButton from "../../Shared/CircleButton";
 import CustomButton from "../../Shared/CustomButton";
 import { links } from "../../utils/links";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const Navbar = () => {
   return (
@@ -32,7 +33,9 @@ const Navbar = () => {
               className="bg-primary text-dark rounded-xl"
               type="button"
             />
-            <CircleButton />
+            <CircleButton>
+              <FiArrowUpRight className="text-primary text-3xl" />
+            </CircleButton>
           </div>
         </div>
       </div>

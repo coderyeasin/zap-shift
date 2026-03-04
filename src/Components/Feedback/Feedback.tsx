@@ -2,6 +2,7 @@ import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
 import Courier from "../../assets/courier-parcels.png";
 import reviewCard from "../../Custom/reviewCard";
 import type { ReviewCardTypes } from "../types/types";
+import CircleButton from "../../Shared/CircleButton";
 
 const Feedback = () => {
   return (
@@ -29,7 +30,7 @@ const Feedback = () => {
               key={card.id}
               className={`
           w-102.5 h-78.75 p-8 transition-all duration-300
-          ${isCenter ? "bg-white rounded-3xl shadow-xl z-20" : ""}
+          ${isCenter ? "bg-white rounded-3xl shadow-md z-20" : ""}
           ${isNear ? "bg-gray/10 rounded-3xl translate-y-16 z-10 opacity-50" : ""}
           ${isFar ? "bg-gray/10 rounded-3xl translate-y-28 opacity-40" : ""}
         `}
@@ -60,9 +61,9 @@ const Feedback = () => {
 
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-0.5/2">
           <div className="flex items-center gap-8">
-            <button className="bg-white cursor-pointer w-12 h-12 rounded-full shadow flex items-center justify-center hover:opacity-90 transition">
-              <LuArrowLeft className="text-text-primary text-xl" />
-            </button>
+            <CircleButton className="bg-white">
+              <LuArrowLeft className="text-text-primary font-bold text-2xl" />
+            </CircleButton>
 
             {/* Dots */}
             <div className="flex gap-2">
@@ -71,11 +72,11 @@ const Feedback = () => {
               <div className="w-2 h-2 bg-text-primary/40 rounded-full"></div>
               <div className="w-2 h-2 bg-text-primary/30 rounded-full"></div>
               <div className="w-2 h-2 bg-text-primary/20 rounded-full"></div>
+              <div className="w-2 h-2 bg-text-primary/10 rounded-full"></div>
             </div>
-
-            <button className="bg-primary w-12 h-12 cursor-pointer rounded-full shadow flex items-center justify-center hover:opacity-90 transition">
-              <LuArrowRight className="text-text-primary text-xl" />
-            </button>
+            <CircleButton className="bg-primary">
+              <LuArrowRight className="text-text-primary font-bold text-2xl" />
+            </CircleButton>
           </div>
         </div>
       </div>

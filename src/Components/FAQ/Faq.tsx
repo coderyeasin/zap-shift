@@ -3,6 +3,7 @@ import CustomButton from "../../Shared/CustomButton";
 import faqQuestions from "../../utils/faq";
 import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 import type { FaqQuestionTypes } from "../types/types";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const Faq = () => {
   return (
@@ -50,7 +51,9 @@ const Faq = () => {
             text="See More FAQ’s"
             className="bg-primary text-text-primary font-bold text-[20px] px-6 py-3 rounded-xl"
           />
-          <CircleButton />
+          <CircleButton>
+            <FiArrowUpRight className="text-primary text-3xl" />
+          </CircleButton>
         </div>
       </div>
     </section>
