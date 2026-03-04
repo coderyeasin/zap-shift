@@ -5,7 +5,7 @@ interface CircleButtonProps {
   children: ReactNode;
   className?: string;
 }
-// <FiArrowUpRight className="text-primary text-3xl" />
+
 const CircleButton = ({ onClick, children, className }: CircleButtonProps) => {
   return (
     <button

@@ -1,4 +1,3 @@
-import Container from "../Layout/Container";
 import Logo from "../../assets/logo.png";
 import CircleButton from "../../Shared/CircleButton";
 import CustomButton from "../../Shared/CustomButton";
@@ -7,7 +6,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Navbar = () => {
   return (
-    <Container>
+    <section className="container">
       <div className="flex items-center justify-between px-2">
         <div className="text-2xl font-bold text-dark cursor-pointer">
           <img src={Logo} alt="ZapShift Logo" />
@@ -39,7 +38,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </Container>
+    </section>
   );
 };
 

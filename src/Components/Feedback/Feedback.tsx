@@ -1,6 +1,6 @@
 import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
 import Courier from "../../assets/courier-parcels.png";
-import reviewCard from "../../Custom/reviewCard";
+import reviewCard from "../../utils/reviewCard";
 import type { ReviewCardTypes } from "../types/types";
 import CircleButton from "../../Shared/CircleButton";
 

@@ -1,30 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-/* @theme {
-  --font-urbanist: "Urbanist", sans-serif;
-
-  --color-bg-color: #eaeced;
-  --color-primary-txt-color: #03373d;
-  --color-gray-text-color: #606060;
-  --color-gray-whit-txt-color: #dadada;
-
-  --color-dark-txt-color: #1f1f1f;
-  --color-shape-grn-color: #caeb66;
-
-  --color-circle-arw-bg-color: #caeb66;
-  --color-faq-ans-bg-color: #e6f2f3;
-  --color-footer-bg-color: #0b0b0b;
-  
-} */
-
 @theme {
-  /* Fonts */
   --font-urbanist: "Urbanist", sans-serif;
-
-  /* Layout */
   --container-2xl: 1500px;
-
   /* Breakpoints */
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;

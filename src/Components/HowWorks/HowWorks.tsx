@@ -1,4 +1,5 @@
-import { worksCards } from "../../Custom/worksCard";
+import { worksCards } from "../../utils/worksCard";
+import type { commonCardTypes } from "../types/types";
 
 const HowWorks = () => {
   return (
@@ -6,7 +7,7 @@ const HowWorks = () => {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-left mb-8">How It Works</h2>
         <div className="flex flex-col md:flex-row justify-around items-center gap-10">
-          {worksCards.map((card) => (
+          {worksCards.map((card: commonCardTypes) => (
             <div
               key={card.id}
               className="bg-white p-6 rounded-lg shadow-md w-full md:w-1/3"

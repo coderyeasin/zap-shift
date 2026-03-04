@@ -1,4 +1,5 @@
-import { serviceCards } from "../../Custom/serviceCards";
+import { serviceCards } from "../../utils/serviceCards";
+import type { commonCardTypes } from "../types/types";
 
 const Services = () => {
   return (
@@ -16,7 +17,7 @@ const Services = () => {
         </div>
 
         <div className="flex flex-wrap justify-center items-center gap-8">
-          {serviceCards.map((card) => (
+          {serviceCards.map((card: commonCardTypes) => (
             <div
               key={card.id}
               className={`

@@ -6,14 +6,14 @@ import StarPeople from "../../assets/start-people.png";
 import Rands from "../../assets/randstad.png";
 import Location from "../../assets/location.png";
 import Shape from "../../assets/shape-org.png";
-import { featuresCard } from "../../Custom/featuresCard";
+import { featuresCard } from "../../utils/featuresCard";
 import CustomButton from "../../Shared/CustomButton";
+import type { commonCardTypes } from "../types/types";
 
 const OurFeatures = () => {
   return (
     <section className="">
       <div className="max-w-7xl mx-auto w-full">
-        {/* sale teams */}
         <div className="py-10 border-b-2 border-dashed border-text-primary">
           <h2 className="text-[28px] font-extrabold text-center">
             We've helped thousands of sales teams
@@ -27,9 +27,9 @@ const OurFeatures = () => {
             <img src={Rands} alt="randstad" className="w-30.75 h-6" />
           </div>
         </div>
-        {/* features */}
+
         <div className="grid grid-cols-1 gap-8 py-20 border-b-2 border-dashed border-text-primary">
-          {featuresCard.map((card) => (
+          {featuresCard.map((card: commonCardTypes) => (
             <div
               key={card.id}
               className="bg-white flex items-center p-6 rounded-3xl"
@@ -52,7 +52,7 @@ const OurFeatures = () => {
             </div>
           ))}
         </div>
-        {/* merchants */}
+
         <div className="flex justify-center items-center bg-text-primary rounded-4xl w-full h-109.5 px-20 py-20 my-20 relative">
           <div className="w-8/12 space-y-5">
             <h2 className="text-[40px] font-extrabold text-white">
