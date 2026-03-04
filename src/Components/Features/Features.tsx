@@ -11,7 +11,7 @@ import CustomButton from "../../Shared/CustomButton";
 
 const OurFeatures = () => {
   return (
-    <section className="pb-10">
+    <section className="">
       <div className="max-w-7xl mx-auto w-full">
         {/* sale teams */}
         <div className="py-10 border-b-2 border-dashed border-text-primary">
