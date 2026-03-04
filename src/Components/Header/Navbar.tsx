@@ -2,15 +2,7 @@ import Container from "../Layout/Container";
 import Logo from "../../assets/logo.png";
 import CircleButton from "../../Shared/CircleButton";
 import CustomButton from "../../Shared/CustomButton";
-
-const links = [
-  "Services",
-  "Coverage",
-  "About Us",
-  "Pricing",
-  "Blog",
-  "Contact",
-];
+import { links } from "../../utils/links";
 
 const Navbar = () => {
   return (

@@ -26,3 +26,9 @@ export type FaqQuestionTypes = {
   question: string;
   answer?: string;
 };
+
+export type socialMediaTypes = {
+  id: number;
+  name: string;
+  icon: string;
+};
