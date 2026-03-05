@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+# ⚡ Zap-Shift | Delivery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Zap-Shift is a fully responsive Delivery App UI built from a Figma design and implemented using ReactJS, TypeScript, and TailwindCSS v4.
 
-Currently, two official plugins are available:
+This project focuses on clean architecture, reusable components, structured layouts, and scalable front-end engineering practices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📌 Project Overview
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Zap-Shift is a static frontend implementation of a delivery application interface.
 
-## Expanding the ESLint configuration
+The purpose of this project is to translate a structured Figma design into a clean, maintainable, and scalable React application using modern frontend standards.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Key Technical Pillars
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Figma-to-Code Accuracy:** Structured implementation of spacing, typography, and layout hierarchy.
+- **Mobile-First Responsiveness:** Responsive layout powered by TailwindCSS utility classes.
+- **Type Safety:** Strict TypeScript interfaces for component props and data structures.
+- **Reusable Architecture:** Atomic and composition-based UI components.
+- **Scalable Structure:** Clean folder organization for long-term maintainability.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Project Scope
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This project includes:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Static UI implementation
+- Structured layout abstraction
+- Pixel-Perfect Design
+- Reusable component system
+- Centralized TypeScript types
+- Responsive design system
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project does NOT include:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Backend integration
+- API connectivity
+- Authentication system
+- Database connection
+
+---
+
+## 🛠 Tech Stack
+
+- ReactJS
+- TypeScript (Strict Mode)
+- TailwindCSS v4
+- Figma (Design Source)
+
+---
+
+## 🏗️ Folder Structure
+
+```text
+src/
+├── layouts/            # Layout
+├── components/         # UI components
+├── shared/             # Reusable Components
+├── types/              # Centralized TypeScript definitions
+├── utils/              # Helper functions
+├── theme/              # Design tokens & theme configuration
+└── assets/             # Images, icons, static files
 ```
