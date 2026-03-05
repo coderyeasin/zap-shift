@@ -3,10 +3,10 @@ import type { commonCardTypes } from "../types/types";
 
 const Services = () => {
   return (
-    <section className="container mx-auto w-full  pb-20">
-      <div className="h-266  bg-text-primary rounded-4xl py-20 px-25">
-        <div className="text-center text-white py-5">
-          <h3 className="text-[40px] font-extrabold text-white">
+    <section className="container mx-auto w-full pb-20 px-10 sm:px-6 lg:px-0">
+      <div className="bg-text-primary rounded-4xl py-15 px-6 sm:px-12 xl:px-25 h-auto">
+        <div className="text-center text-white py-5 px-4">
+          <h3 className="text-2xl sm:text-[40px] font-extrabold text-white">
             Our Services
           </h3>
           <p className="font-medium text-light-gray my-3 leading-6.5">
@@ -16,14 +16,11 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center items-center gap-8">
+        <div className="flex flex-wrap lg:flex-row justify-center items-center gap-8">
           {serviceCards.map((card: commonCardTypes) => (
             <div
               key={card.id}
-              className={`
-                ${card.id === 2 ? "bg-primary " : "bg-white"}
-                  w-102.5 h-87 rounded-4xl px-8 py-6 flex flex-col justify-start items-center gap-4 space-y-3
-              `}
+              className={`${card.id === 2 ? "bg-primary" : "bg-white"} w-full sm:w-80 md:w-80 lg:w-102.5 xl:lg:w-102.5 h-87 rounded-4xl px-6 py-6 flex flex-col justify-start items-center gap-4 space-y-3`}
             >
               <div className="w-22 h-22 rounded-full bg-radial-[at_50%_75%] from-[#EEEDFC]/0 to-[#EEEDFC] to-90% flex justify-center items-center">
                 <img src={card.icon} alt={card.title} className="w-12 h-12" />

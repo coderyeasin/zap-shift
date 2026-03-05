@@ -7,18 +7,18 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Faq = () => {
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-[40px] tracking-[2%] leading-10 text-text-primary font-extrabold text-center mb-4">
+    <section className="py-20 px-4">
+      <div className="max-w-7xl mx-auto px-10 sm:px-0 lg:px-0">
+        <h2 className="text-2xl sm:text-[40px] tracking-[2%] leading-10 text-text-primary font-extrabold text-center mb-4">
           Frequently Asked Question (FAQ)
         </h2>
-        <p className="text-gray font-medium text-center mb-10 leading-6.5">
+        <p className="text-gray font-medium text-center mb-10 px-32 lg:px-64 leading-6.5">
           Enhance posture, mobility, and well-being effortlessly with Posture
-          Pro. Achieve proper alignment, reduce <br /> pain, and strengthen your
-          body with ease!
+          Pro. Achieve proper alignment, reduce pain, and strengthen your body
+          with ease!
         </p>
       </div>
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-3xl lg:max-w-5xl mx-auto px-15 lg:px-4">
         <div className="flex flex-col gap-5">
           {faqQuestions.map((faq: FaqQuestionTypes) => (
             <div

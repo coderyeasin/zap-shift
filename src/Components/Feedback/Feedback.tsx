@@ -7,9 +7,9 @@ import CircleButton from "../../Shared/CircleButton";
 const Feedback = () => {
   return (
     <section className="py-10">
-      <div className="max-w-3xl mx-auto space-y-3">
+      <div className="max-w-lg md:max-w-xl lg:max-w-3xl mx-auto space-y-3 px-10 sm:px-6 lg:px-4">
         <img src={Courier} alt="Courier Parcels" className="mx-auto" />
-        <h2 className="text-[40px] font-extrabold text-center tracking-[2%] text-text-primary">
+        <h2 className="text-3xl sm:text-[40px] font-extrabold text-center tracking-[2%] text-text-primary">
           What our customers are sayings
         </h2>
         <p className="text-center text-gray font-medium leading-6.5">
@@ -19,7 +19,7 @@ const Feedback = () => {
         </p>
       </div>
 
-      <div className="relative flex justify-center items-end gap-10 py-20">
+      <div className="relative flex justify-center items-end gap-10 py-20 px-20 sm:px-6 lg:px-0">
         {reviewCard.map((card: ReviewCardTypes, i) => {
           const isCenter = i === 2;
           const isNear = i === 1 || i === 3;
@@ -29,10 +29,10 @@ const Feedback = () => {
             <div
               key={card.id}
               className={`
-          w-102.5 h-78.75 p-8 transition-all duration-300
+          w-full sm:w-80 md:w-60 lg:w-70 xl:w-102.5 h-auto p-8 transition-all duration-300
           ${isCenter ? "bg-white rounded-3xl shadow-md z-20" : ""}
-          ${isNear ? "bg-gray/10 rounded-3xl translate-y-16 z-10 opacity-50" : ""}
-          ${isFar ? "bg-gray/10 rounded-3xl translate-y-28 opacity-40" : ""}
+          ${isNear ? "hidden md:block bg-gray/10 rounded-3xl translate-y-16 z-10 opacity-50" : ""}
+          ${isFar ? "hidden xl:block bg-gray/10 rounded-3xl translate-y-28 opacity-40" : ""}
         `}
             >
               <div className="relative py-6 mb-4 border-b border-dashed border-text-primary">
@@ -59,7 +59,7 @@ const Feedback = () => {
           );
         })}
 
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-0.5/2">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 px-4">
           <div className="flex items-center gap-8">
             <CircleButton className="bg-white">
               <LuArrowLeft className="text-text-primary font-bold text-2xl" />
@@ -67,12 +67,12 @@ const Feedback = () => {
 
             {/* Dots */}
             <div className="flex gap-2">
-              <div className="w-2 h-2 bg-text-primary rounded-full"></div>
-              <div className="w-2 h-2 bg-text-primary/60 rounded-full"></div>
-              <div className="w-2 h-2 bg-text-primary/40 rounded-full"></div>
-              <div className="w-2 h-2 bg-text-primary/30 rounded-full"></div>
-              <div className="w-2 h-2 bg-text-primary/20 rounded-full"></div>
-              <div className="w-2 h-2 bg-text-primary/10 rounded-full"></div>
+              <div className="w-2 h-2 bg-[#056873]/70 rounded-full"></div>
+              <div className="w-2 h-2 bg-[#C3DFE2] rounded-full"></div>
+              <div className="w-2 h-2 bg-[#C3DFE2] rounded-full"></div>
+              <div className="w-2 h-2 bg-[#C3DFE2] rounded-full"></div>
+              <div className="w-2 h-2 bg-[#C3DFE2] rounded-full"></div>
+              <div className="w-2 h-2 bg-[#C3DFE2] rounded-full"></div>
             </div>
             <CircleButton className="bg-primary">
               <LuArrowRight className="text-text-primary font-bold text-2xl" />

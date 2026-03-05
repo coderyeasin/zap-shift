@@ -5,26 +5,32 @@ import CustomButton from "../../Shared/CustomButton";
 import { FiArrowUpRight } from "react-icons/fi";
 const HeroSection = () => {
   return (
-    <section className="container bg-white py-24 rounded-2xl w-full h-166.25 mx-auto">
-      <div className="flex justify-around items-center gap-10 lg:gap-0 flex-col lg:flex-row">
-        <div className="max-w-6/12 mx-auto text-center lg:text-left space-y-3">
+    <section className="container bg-white py-24 lg:px-20 rounded-2xl w-full mx-auto xl:h-166.25 h-auto">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-0 mx-auto">
+        <div className="lg:w-6/12 lg:text-left space-y-3 px-10 md:px-4">
           <div>
-            <img src={Parcel} alt="Parcel" width={220} height={100} />
+            <img
+              src={Parcel}
+              alt="Parcel"
+              width={220}
+              height={100}
+              className=""
+            />
           </div>
-          <h1 className="text-4xl lg:text-[56px] font-extrabold text-text-primary leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-[56px] font-extrabold text-text-primary leading-tight">
             We Make Sure Your <br />
             <span className="text-[#33929D]"> Parcel Arrives </span> On Time{" "}
             <br /> – No Fuss.
           </h1>
 
-          <p className="text-gray text-[16px] leading-6">
+          <p className="text-gray text-base sm:text-lg leading-6">
             Enjoy fast, reliable parcel delivery with real-time tracking and
-            zero hassle. From personal <br /> packages to business shipments —
-            we deliver on time, every time.
+            zero hassle. From personal packages to business shipments — we
+            deliver on time, every time.
           </p>
 
-          <div className="flex gap-4 my-7">
-            <div className="flex items-center">
+          <div className="flex flex-col xl:flex-row gap-4 my-7">
+            <div className="flex items-center ">
               <CustomButton
                 text="Track Your Parcel"
                 className="bg-primary rounded-full"
@@ -37,7 +43,7 @@ const HeroSection = () => {
             </div>
             <CustomButton
               text="Be A Rider"
-              className="border-2 border-light-gray rounded-xl "
+              className="border-2 border-light-gray rounded-xl md:max-w-70 "
               type="button"
             />
           </div>
@@ -49,8 +55,12 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="max-w-6/12 mx-auto flex justify-center text-center lg:text-left">
-          <img src={Hero} alt="Delivery Rider" width={473} height={450} />
+        <div className="w-full lg:w-6/12 mx-auto flex justify-center lg:justify-end text-center ">
+          <img
+            src={Hero}
+            alt="Delivery Rider"
+            className="w-full max-w-118.25 h-auto"
+          />
         </div>
       </div>
     </section>

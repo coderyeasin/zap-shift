@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <header className="w-full bg-white my-10 py-4 px-4 max-w-2xl mx-auto rounded-2xl ">
+    <header className="container bg-white my-10 py-4 px-4 sm:px-6 lg:px-0 mx-auto rounded-2xl">
       <Navbar />
     </header>
   );

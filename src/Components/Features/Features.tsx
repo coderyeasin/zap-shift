@@ -12,36 +12,32 @@ import type { commonCardTypes } from "../types/types";
 
 const OurFeatures = () => {
   return (
-    <section className="max-w-7xl mx-auto w-full">
-      <div className="py-10 border-b-2 border-dashed border-text-primary">
-        <h2 className="text-[28px] font-extrabold text-center">
+    <section className="max-w-7xl mx-auto w-full px-4">
+      <div className="py-10 lg:border-b-2 border-dashed border-text-primary">
+        <h2 className="text-xl sm:text-[28px] font-extrabold text-center">
           We've helped thousands of sales teams
         </h2>
-        <div className="flex flex-wrap lg:flex-row items-center justify-between gap-10 py-10">
-          <img src={Casio} alt="casio" className="w-30.75 h-6" />
-          <img src={Amazon} alt="amazon" className="w-30.75 h-6" />
-          <img src={Moon} alt="moonstar" className="w-30.75 h-6" />
-          <img src={Star} alt="star" className="w-30.75 h-6" />
-          <img src={StarPeople} alt="star-people" className="w-30.75 h-6" />
-          <img src={Rands} alt="randstad" className="w-30.75 h-6" />
+        <div className="lg:w-full w-8/12 mx-auto flex flex-wrap items-center justify-center lg:justify-between gap-6 lg:gap-10 py-10">
+          <img src={Casio} alt="casio" className="h-6 w-auto" />
+          <img src={Amazon} alt="amazon" className="h-6 w-auto" />
+          <img src={Moon} alt="moonstar" className="h-6 w-auto" />
+          <img src={Star} alt="star" className="h-6 w-auto" />
+          <img src={StarPeople} alt="star-people" className="h-6 w-auto" />
+          <img src={Rands} alt="randstad" className="h-6 w-auto" />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-8 py-20 border-b-2 border-dashed border-text-primary">
+      <div className="grid grid-cols-1 gap-8 py-20 px-20 lg:px-0 lg:border-b-2 border-dashed border-text-primary">
         {featuresCard.map((card: commonCardTypes) => (
           <div
             key={card.id}
-            className="bg-white flex items-center p-6 rounded-3xl"
+            className="bg-white flex flex-col lg:flex-row items-center p-6 rounded-3xl"
           >
-            <div className="w-2.5/12">
-              <img
-                src={card.icon}
-                alt={card.title}
-                className="w-60 h-50 pr-10"
-              />
+            <div className="w-full lg:w-2/12 flex justify-center lg:justify-start mb-4 lg:mb-0">
+              <img src={card.icon} alt={card.title} className="w-40 h-40" />
             </div>
-            <div className="w-9/12 space-y-5 border-l-2 border-dashed border-text-primary px-12 py-5">
-              <h3 className="text-2xl font-extrabold text-text-primary">
+            <div className="w-full lg:w-10/12 space-y-5 border-t lg:border-t-0 lg:border-l-2 border-dashed border-text-primary px-0 lg:px-12 py-5 my-3 lg:my-0">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-text-primary">
                 {card.title}
               </h3>
               <p className="text-gray font-medium leading-6.5">
@@ -52,17 +48,17 @@ const OurFeatures = () => {
         ))}
       </div>
 
-      <div className="flex justify-center items-center bg-text-primary rounded-4xl w-full h-109.5 px-20 py-20 my-20 relative">
-        <div className="w-8/12 space-y-5">
-          <h2 className="text-[40px] font-extrabold text-white">
+      <div className="flex flex-col lg:flex-row justify-between items-center bg-text-primary rounded-4xl lg:w-full w-10/12 px-6 sm:px-12 lg:px-20 py-20 my-20 mx-auto relative">
+        <div className="w-full lg:w-7/12 space-y-5 text-center lg:text-left">
+          <h2 className="text-3xl lg:text-[40px] font-extrabold text-white">
             Merchant and Customer Satisfaction is Our First Priority
           </h2>
-          <p className="text-light-gray leading-6.5 mt-5 max-w-9/12">
+          <p className="text-light-gray leading-6.5 mt-5 lg:max-w-9/12">
             We offer the lowest delivery charge with the highest value along
             with 100% safety of your product. Pathao courier delivers your
-            parcels in every corner of Bangladesh right on time.{" "}
+            parcels in every corner of Bangladesh right on time.
           </p>
-          <div className="flex items-center gap-5">
+          <div className="flex flex-col md:flex-row items-center gap-5">
             <CustomButton
               text="Become a Merchant"
               className="font-bold text-[20px] text-text-primary rounded-full bg-primary"
@@ -73,8 +69,12 @@ const OurFeatures = () => {
             />
           </div>
         </div>
-        <div className="w-5/12">
-          <img src={Location} alt="location" className="w-[531px] h-[300px]" />
+        <div className="w-full lg:w-5/12 mt-10 lg:mt-0 flex justify-center">
+          <img
+            src={Location}
+            alt="location"
+            className="max-w-100 lg:max-w-132.75 h-auto"
+          />
         </div>
         <img src={Shape} alt="shape" className="absolute top-0 w-full" />
       </div>
