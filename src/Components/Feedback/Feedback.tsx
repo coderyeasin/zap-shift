@@ -6,7 +6,7 @@ import CircleButton from "../../Shared/CircleButton";
 
 const Feedback = () => {
   return (
-    <section className="py-10">
+    <section className="pb-10">
       <div className="max-w-lg md:max-w-xl lg:max-w-3xl mx-auto space-y-3 px-10 sm:px-6 lg:px-4">
         <img src={Courier} alt="Courier Parcels" className="mx-auto" />
         <h2 className="text-3xl sm:text-[40px] font-extrabold text-center tracking-[2%] text-text-primary">
