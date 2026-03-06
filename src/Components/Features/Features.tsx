@@ -14,7 +14,7 @@ const OurFeatures = () => {
   return (
     <section className="max-w-7xl mx-auto w-full px-4">
       <div className="py-10 lg:border-b-2 border-dashed border-text-primary">
-        <h2 className="text-xl sm:text-[28px] font-extrabold text-center">
+        <h2 className="text-xl sm:text-[28px] font-extrabold text-center lg:pb-5">
           We've helped thousands of sales teams
         </h2>
         <div className="lg:w-full w-8/12 mx-auto flex flex-wrap items-center justify-center lg:justify-between gap-6 lg:gap-10 py-10">
