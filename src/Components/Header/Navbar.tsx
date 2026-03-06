@@ -16,7 +16,6 @@ const Navbar = () => {
           <img src={Logo} alt="ZapShift Logo" />
         </div>
 
-        {/* desktop nav */}
         <ul className="hidden lg:flex items-center gap-8 text-text-gray font-medium">
           {links.map((link) => (
             <li key={link} className="hover:text-dark cursor-pointer">
@@ -25,7 +24,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* actions for desktop */}
         <div className="hidden lg:flex items-center gap-4">
           <CustomButton
             text="Sign In"
@@ -44,7 +42,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* mobile menu icon */}
+        {/* mobile menu */}
         <button
           className="lg:hidden text-2xl p-2"
           onClick={() => setMenuOpen((o) => !o)}
